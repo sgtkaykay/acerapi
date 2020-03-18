@@ -10,4 +10,3 @@
   echo "{\"Acer\":";
   echo json_encode($list);
   echo "}";
-?>
