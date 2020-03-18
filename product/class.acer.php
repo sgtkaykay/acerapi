@@ -1,4 +1,5 @@
 <?php
+
  class Acer{
 	public $db;
 
@@ -11,7 +12,7 @@
 	}
 
 	public function get_acer(){
-		$sql = "SELECT * FROM `tblLaptop`";
+		$sql = "SELECT * FROM tblLaptop";
 		$result = mysqli_query($this->db,$sql);
 		while($r = mysqli_fetch_assoc($result)){
 			$list[] = $r;
@@ -29,7 +30,7 @@
 	}
 
   public function search_acer($search){
-		$sql = "SELECT * FROM tblLaptop WHERE ID LIKE '%$search%'";
+		$sql = "SELECT * FROM tblLaptop WHERE Name LIKE '%$search%'";
 		$result = mysqli_query($this->db,$sql);
 		while($r = mysqli_fetch_assoc($result)){
 			$list[] = $r;
