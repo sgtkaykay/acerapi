@@ -10,7 +10,7 @@
 		}
 	}
 
-	public function get_music(){
+	public function get_acer(){
 		$sql = "SELECT * FROM tblPhone";
 		$result = mysqli_query($this->db,$sql);
 		while($r = mysqli_fetch_assoc($result)){
