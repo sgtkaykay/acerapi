@@ -11,7 +11,7 @@
 	}
 
 	public function get_acer(){
-		$sql = "SELECT * FROM tblLaptop";
+		$sql = "SELECT * FROM `tblLaptop`";
 		$result = mysqli_query($this->db,$sql);
 		while($r = mysqli_fetch_assoc($result)){
 			$list[] = $r;
