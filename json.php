@@ -5,7 +5,7 @@
   header('Content-Type: application/json');
 
   $acer = new Acer();
-  $list=$music->get_Acer();
+  $list=$music->get_acer();
 
   echo "{\"Acer\":";
   echo json_encode($list);
