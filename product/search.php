@@ -1,5 +1,5 @@
 <?php
-  $query = (isset($_GET['search']) && $_GET['search'] != '') ? $_GET['search'] : '';
+  $search = (isset($_GET['search']) && $_GET['search'] != '') ? $_GET['search'] : '';
 
   include 'config.php';
   include 'class.acer.php';
