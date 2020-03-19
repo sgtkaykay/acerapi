@@ -1,5 +1,6 @@
 <?php
-  $search = (isset($_GET['search']) && $_GET['search'] != '') ? $_GET['search'] : '';
+  $query = (isset($_GET['search']) && $_GET['search'] != '') ? $_GET['search'] : '';
+  $search = str_replace(" ", "%20", $query);
 
   include 'config.php';
   include 'class.acer.php';
